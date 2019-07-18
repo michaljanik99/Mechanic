@@ -192,7 +192,7 @@ nav button {
     }
 
     .button-nav {
-        font-size: 0px;
+        font-size: 20px;
     }
 }
 
@@ -211,6 +211,7 @@ nav button {
 
     }
 
+    /* xiomi jego mać */
     .button-nav {
         font-size: 100px;
 
