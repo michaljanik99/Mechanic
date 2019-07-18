@@ -38,7 +38,7 @@ nav.active {
 /* Xiomi*/
 .button-nav {
     position: fixed;
-    font-size: 100px;
+    font-size: 0;
     left: 5vw;
     top: 10px;
     color: rgb(153, 22, 22);
@@ -213,7 +213,7 @@ nav button {
     }
 
     .button-nav {
-        font-size: 0;
+        font-size: 100px;
 
     }
 
