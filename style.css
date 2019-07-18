@@ -179,37 +179,37 @@ nav button {
 @media (min-width:600px) {
 
     nav a {
-        font-size: 3.0rem;
+        font-size: 1.5rem;
         margin: 3% auto;
     }
 
     nav button {
-        font-size: 3.0rem;
+        font-size: 1.5rem;
 
     }
 
     .button-nav {
-        font-size: 3.0rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (min-width:600px) and (orientation:landscape) {
     nav {
-        padding-top: 3%;
+        padding-top: 1%;
     }
 
     nav a {
-        font-size: 3.0rem;
-        margin: 1.5% auto;
+        font-size: 1.0rem;
+        margin: 0.5% auto;
     }
 
     nav button {
-        font-size: 3.0rem;
+        font-size: 1.0rem;
 
     }
 
     .button-nav {
-        font-size: 4.0rem;
+        font-size: 2.0rem;
 
     }
 
