@@ -178,6 +178,7 @@ nav button {
 
 @media (min-width:600px) {
 
+    /*  xiaomi */
     nav a {
         font-size: 1.5rem;
         margin: 3% auto;
@@ -189,7 +190,7 @@ nav button {
     }
 
     .button-nav {
-        font-size: 0.3rem;
+        font-size: 1.5rem;
     }
 }
 
