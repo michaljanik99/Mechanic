@@ -137,12 +137,13 @@ nav button {
 
     }
 
+    /* xiaomi kuziwa */
     .button-nav {
         transform: rotate(90deg);
         transform-origin: center center;
         transform-origin: 50% 50%;
-        font-size: 0;
-        font-size: 0;
+        font-size: 100px;
+
 
     }
 
