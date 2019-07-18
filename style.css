@@ -37,7 +37,7 @@ nav.active {
 
 .button-nav {
     position: fixed;
-    font-size: 3.0rem;
+    font-size: 50px;
     left: 5vw;
     top: 10px;
     color: rgb(153, 22, 22);
