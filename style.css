@@ -427,7 +427,7 @@ nav button {
     nav a {
         margin: 0 30px;
         padding: 0;
-        font-size: 35px;
+        font-size: 30px;
         align-items: center;
         flex-basis: 12%;
         position: relative;
@@ -438,7 +438,7 @@ nav button {
 
 
     nav button {
-        font-size: 35px;
+        font-size: 30px;
         padding: 5px 10px;
     }
 }
@@ -609,6 +609,7 @@ header h1 {
 
 footer {
     background-color: black;
+    width: 100vw;
 }
 
 footer p {
@@ -652,6 +653,8 @@ footer p {
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
+
+
     header h1 {
         font-size: 10.2rem;
     }
@@ -707,15 +710,20 @@ footer p {
 
 @media (orientation: landscape) and (min-width: 1280px) {
     header h1 {
-        font-size: 17.2rem;
+        font-size: 15.2rem;
+    }
+
+    main {
+        max-width: 1920px;
+        margin: 50px auto;
     }
 
     main h1 {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
     }
 
     main p.description {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .features .info .right,
@@ -730,11 +738,16 @@ footer p {
 
     .features .info h2 {
         margin-top: 15px;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
     .features .info p {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .contact {
+        max-width: 1920px;
+        margin: 50px auto;
     }
 
     .contact h1 {
@@ -763,6 +776,8 @@ footer p {
     }
 }
 
+
+
 /* Repai.html */
 
 main .repair {
@@ -775,6 +790,8 @@ main .repair {
     text-align: left;
     min-height: 250px;
 }
+
+
 
 .price .mech .list {
     overflow-y: hidden;
@@ -835,18 +852,101 @@ main .repair {
     border-collapse: collapse;
 }
 
+@media (min-width:480px) and (orientation:landscape) {
+    main .repair {
+
+        font-size: 18px;
+    }
+
+    .price .mech .list td {
+        font-size: 18px;
+
+    }
+
+}
+
+@media (min-width:600px) and (orientation:landscape) {
+
+
+    .price .mech .list td {
+        font-size: 22px;
+
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    main .repair {
+
+        font-size: 25px;
+    }
+
+    .price .mech .list td {
+        font-size: 35px;
+
+    }
+
+    .price h2 {
+
+        font-size: 27px;
+
+    }
+
+    .price .mech {
+        font-size: 25px;
+
+    }
+
+    .price .mech .list {
+        margin: 20px auto;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    main .repair {
+
+        font-size: 30px;
+    }
+
+    .price .mech .list td {
+        font-size: 35px;
+
+    }
+
+    .price h2 {
+
+        font-size: 29px;
+
+    }
+
+    .price .mech {
+        font-size: 28px;
+
+    }
+
+    .price .mech .list {
+        margin: 20px auto;
+    }
+}
+
+
 /* parts.html */
 
 main .advert {
     padding: 5%;
-    margin: 20px auto;
+    margin: 25px auto;
     font-size: 20px;
 }
 
 .animation {
     position: relative;
-    min-height: 200px;
+    min-height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+
+
+
 }
+
 
 .animation .fa-square,
 .animation .fa-cart-arrow-down,
@@ -854,42 +954,45 @@ main .advert {
 .animation .fa-shipping-fast,
 .animation .fa-thumbs-up {
     position: absolute;
-    font-size: 100px;
+    font-size: 120px;
 }
 
 .animation .fa-square {
-    left: 35%;
+    left: 50%;
     top: 0;
     animation: square 3s 2s linear both;
     transform-origin: center center;
-    transform: scale(1);
+    transform: translateX(-50%) scale(0.5);
 }
 
 .animation .fa-cart-arrow-down {
-    left: 29%;
+    left: 50%;
     top: 60%;
 
-    transform: scale(.5);
+    transform: translateX(-50%);
     animation: cart 3s 1.5s linear both;
 }
 
 .animation .fa-handshake {
-    top: 40%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     opacity: 0;
+    transform: translate(-50%, -50%);
     animation: hands 3s 4.5s both;
 }
 
 .animation .fa-shipping-fast {
-    left: 20%;
-    top: 40%;
-    opacity: 0;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
     animation: shipping 3s 7.5s both;
 }
 
 .animation .fa-thumbs-up {
-    left: 30%;
-    top: 40%;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     animation: thumbs 3s 10.5s both;
 
@@ -900,12 +1003,12 @@ main .advert {
 @keyframes square {
     50% {
         top: 25%;
-        transform: scale(0.5)
+
     }
 
     80% {
         top: 50%;
-        transform: scale(0)
+
     }
 
     100% {
@@ -917,12 +1020,12 @@ main .advert {
 @keyframes cart {
     50% {
         top: 50%;
-        transform: scale(1)
+
     }
 
     80% {
         top: 40%;
-        transform: scale(1.2)
+
     }
 
     100% {
@@ -952,21 +1055,11 @@ main .advert {
 }
 
 @keyframes shipping {
-    25% {
-        opacity: .5;
-    }
 
-    50% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: .5;
-    }
 
     100% {
-        opacity: 0;
-        left: 50%
+
+        left: 100%
     }
 
 }
@@ -975,10 +1068,90 @@ main .advert {
 
     100% {
         opacity: 1;
-        left: 40%
+        left: 50%
     }
 
 }
+
+@media (min-width:480px) and (orientation:landscape) {
+
+    .animation .fa-square,
+    .animation .fa-cart-arrow-down,
+    .animation .fa-handshake,
+    .animation .fa-shipping-fast,
+    .animation .fa-thumbs-up {
+
+        font-size: 135px;
+    }
+
+
+
+    @keyframes square {
+        50% {
+            top: 25%;
+
+        }
+
+        80% {
+            top: 50%;
+
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+    }
+
+    @keyframes cart {
+        50% {
+
+            top: 50%;
+
+        }
+
+        80% {
+            top: 40%;
+
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+    }
+}
+
+@media (min-width:530px) {
+
+    .animation .fa-square,
+    .animation .fa-cart-arrow-down,
+    .animation .fa-handshake,
+    .animation .fa-shipping-fast,
+    .animation .fa-thumbs-up {
+
+        font-size: 70px;
+    }
+
+    .animation {
+        min-height: 150px;
+
+
+    }
+
+
+
+}
+
+@media (min-width:640px) and (orientation:landscape) {}
+
+@media (min-width:768px) {}
+
+@media(orientation:landscape) and (min-width: 800px) {}
+
+@media(orientation:landscape) and (min-width: 1024px) {}
+
+@media(orientation:landscape) and (min-width: 1280px) {}
 
 /*visit.html  */
 .visits {
