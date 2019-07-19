@@ -942,11 +942,7 @@ main .advert {
     min-height: 300px;
     overflow: hidden;
     margin: 0 auto;
-
-
-
 }
-
 
 .animation .fa-square,
 .animation .fa-cart-arrow-down,
@@ -968,7 +964,6 @@ main .advert {
 .animation .fa-cart-arrow-down {
     left: 50%;
     top: 60%;
-
     transform: translateX(-50%);
     animation: cart 3s 1.5s linear both;
 }
@@ -985,7 +980,6 @@ main .advert {
     left: -50%;
     top: 50%;
     transform: translateY(-50%);
-
     animation: shipping 3s 7.5s both;
 }
 
@@ -995,7 +989,6 @@ main .advert {
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: thumbs 3s 10.5s both;
-
 }
 
 
@@ -1081,7 +1074,18 @@ main .advert {
     .animation .fa-shipping-fast,
     .animation .fa-thumbs-up {
 
-        font-size: 135px;
+        font-size: 65px;
+    }
+
+    .animation .fa-cart-arrow-down {
+
+        top: 50%;
+
+    }
+
+    main .advert {
+        margin: 0 auto;
+        font-size: 15px;
     }
 
 
@@ -1130,11 +1134,11 @@ main .advert {
     .animation .fa-shipping-fast,
     .animation .fa-thumbs-up {
 
-        font-size: 70px;
+        font-size: 100px;
     }
 
     .animation {
-        min-height: 150px;
+        min-height: 200px;
 
 
     }
@@ -1143,13 +1147,80 @@ main .advert {
 
 }
 
-@media (min-width:640px) and (orientation:landscape) {}
+@media (min-width:640px) and (orientation:landscape) {
+    main .advert {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
 
-@media (min-width:768px) {}
+@media (min-width:768px) {
 
-@media(orientation:landscape) and (min-width: 800px) {}
+    .animation .fa-square,
+    .animation .fa-cart-arrow-down,
+    .animation .fa-handshake,
+    .animation .fa-shipping-fast,
+    .animation .fa-thumbs-up {
 
-@media(orientation:landscape) and (min-width: 1024px) {}
+        font-size: 130px;
+    }
+
+    main .advert {
+        margin: 0 auto;
+        font-size: 35px;
+    }
+
+    .animation {
+        min-height: 300px;
+
+
+
+    }
+
+    .animation .fa-cart-arrow-down {
+
+        top: 45%;
+
+    }
+
+    @keyframes square {
+        50% {
+            top: 25%;
+
+        }
+
+        80% {
+            top: 40%;
+
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+    }
+
+    @keyframes cart {
+        50% {
+
+            top: 42.5%;
+
+        }
+
+        80% {
+            top: 40%;
+
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+    }
+}
+
+
+
 
 @media(orientation:landscape) and (min-width: 1280px) {}
 
@@ -1191,6 +1262,7 @@ main .advert {
 
 
 .visits input:last-of-type {
+    font-size: 20px;
     margin-top: 20px;
     text-transform: uppercase;
     color: white;
@@ -1226,4 +1298,72 @@ main .advert {
     padding: 5%;
     font-size: 17px;
     text-align: left;
+}
+
+@media (min-width:768px) {
+    .towing h1 {
+
+        font-size: 35px;
+    }
+
+    .towing .desc h2 {
+        font-size: 25px;
+    }
+
+    .towing .desc p {
+
+        font-size: 20px;
+
+    }
+
+    .towing img {
+        width: 30%;
+        margin: 30px auto 30px;
+    }
+}
+
+
+
+@media(orientation:landscape) and (min-width: 1280px) {
+    .towing h1 {
+
+        font-size: 40px;
+    }
+
+    .towing .desc h2 {
+        font-size: 30px;
+    }
+
+    .towing .desc p {
+
+        font-size: 25px;
+
+    }
+
+    .towing img {
+        width: 30%;
+        margin: 30px auto 50px;
+    }
+}
+
+@media(orientation:landscape) and (min-width: 1440px) {
+    .towing h1 {
+
+        font-size: 50px;
+    }
+
+    .towing .desc h2 {
+        font-size: 45px;
+    }
+
+    .towing .desc p {
+
+        font-size: 35px;
+
+    }
+
+    .towing img {
+        width: 30%;
+        margin: 30px auto 50px;
+    }
 }
