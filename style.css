@@ -201,9 +201,7 @@ nav button {
 }
 
 @media (min-width:640px) and (orientation:landscape) {
-    nav {
-        padding-top: 1%;
-    }
+
 
     nav a {
         font-size: 20px;
@@ -238,12 +236,17 @@ nav button {
     }
 
     nav a {
-        font-size: 1.0rem;
-        margin: 2% auto;
+        font-size: 35px;
+        margin: 5% auto;
+        flex-grow: 0
+    }
+
+    nav button {
+        font-size: 35px;
     }
 
     .button-nav {
-        font-size: 0;
+        font-size: 40px;
 
     }
 
@@ -265,7 +268,7 @@ nav button {
         transform: translateY(-100%);
         height: 100%;
         width: 100vw;
-        padding-top: 2%;
+
 
     }
 
@@ -277,7 +280,7 @@ nav button {
 
         font-size: 2.0rem;
         display: inline-block;
-
+        flex-grow: 1;
         padding: 10px;
         margin: 1.5% auto;
 
@@ -289,6 +292,9 @@ nav button {
 
 
     }
+
+
+
 
     .button-nav {
         transform: rotate(90deg);
@@ -334,6 +340,7 @@ nav button {
     nav a {
         font-size: 1.8rem;
         margin: 1% auto;
+
     }
 
     nav button {
@@ -368,10 +375,12 @@ nav button {
     nav a {
         margin: 0 30px;
         padding: 0;
-        font-size: 2.5rem;
+        font-size: 25px;
         align-items: center;
         flex-basis: 12%;
         position: relative;
+        flex-grow: 0;
+
 
 
     }
@@ -404,11 +413,33 @@ nav button {
     }
 
     nav button {
-        font-size: 3.0rem;
+        font-size: 25px;
+        padding: 5px 10px;
     }
 
     .button-nav {
         display: none;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1440px) {
+
+    nav a {
+        margin: 0 30px;
+        padding: 0;
+        font-size: 35px;
+        align-items: center;
+        flex-basis: 12%;
+        position: relative;
+
+
+
+    }
+
+
+    nav button {
+        font-size: 35px;
+        padding: 5px 10px;
     }
 }
 
