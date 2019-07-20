@@ -1222,7 +1222,7 @@ main .advert {
 
 
 
-@media(orientation:landscape) and (min-width: 1280px) {}
+
 
 /*visit.html  */
 .visits {
@@ -1274,6 +1274,40 @@ main .advert {
     font-size: 20px;
     display: block;
 }
+
+@media(orientation:landscape) and (min-width: 1280px) {
+    .visits h1 {
+        margin-top: 50px;
+        font-size: 45px;
+    }
+
+    .visits input {
+        margin: 15px 0;
+        width: 50%;
+        font-size: 30px;
+
+
+    }
+
+    .visits form {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .label-input {
+        font-size: 30px;
+
+    }
+
+    .visits input:focus {
+
+        background-color: rgb(219, 216, 216);
+    }
+
+
+}
+
+
 
 /* towing.html */
 .towing {
