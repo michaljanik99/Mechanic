@@ -1,3 +1,4 @@
+// menu button script
 const btn = document.querySelector('.button-nav i');
 const menu = document.querySelector('nav');
 btn.addEventListener('click', () => {
@@ -5,6 +6,8 @@ btn.addEventListener('click', () => {
     document.querySelector('.button-nav').classList.toggle('active');
 
 })
+
+// menu hiden script
 
 const windowWidth = window.outerWidth;
 if (windowWidth >= 1280) {
@@ -22,6 +25,7 @@ if (windowWidth >= 1280) {
     }
 }
 
+// slider script
 
 const imges = ['img/car-repair-362150_640.jpg', 'img/jumper-cables-926308_640.jpg', 'img/auto-repair-1954636_640.jpg'];
 const titles = ['Tunnig mechaniczny', 'Diagnostyka komputerowa i elektryka', 'Serwis układów hamulcowych'];
@@ -32,9 +36,6 @@ const description = document.querySelector('.features .info p');
 const img = document.querySelector('.features .info .imge');
 const leftBtn = document.querySelector('.features .info .left');
 const rightBtn = document.querySelector('.features .info .right');
-
-
-
 
 let index = 0;
 img.style.backgroundImage = `url(${imges[index]})`;

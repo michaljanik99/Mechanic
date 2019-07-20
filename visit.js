@@ -1,3 +1,5 @@
+// button menu script
+
 const btn = document.querySelector('.button-nav i');
 const menu = document.querySelector('nav');
 btn.addEventListener('click', () => {
@@ -6,6 +8,7 @@ btn.addEventListener('click', () => {
 
 })
 
+// menu hiden script
 const windowWidth = window.outerWidth;
 if (windowWidth >= 1280) {
     const navBar = document.querySelector('nav');

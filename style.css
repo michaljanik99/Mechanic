@@ -9,7 +9,8 @@ font-family: 'Oswald', sans-serif; */
     box-sizing: border-box;
 }
 
-/* index.html */
+/* menu styles */
+
 nav {
     position: fixed;
     left: 0;
@@ -23,8 +24,6 @@ nav {
     transform: translateX(-110%);
     transition: .3s linear;
     z-index: 1;
-
-
 }
 
 nav.active {
@@ -32,10 +31,8 @@ nav.active {
     -webkit-box-shadow: 7px 21px 87px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 7px 21px 87px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 7px 21px 87px -10px rgba(0, 0, 0, 0.75);
-
 }
 
-/* Xiomi*/
 .button-nav {
     position: fixed;
     font-size: 30px;
@@ -44,14 +41,9 @@ nav.active {
     color: rgb(153, 22, 22);
     z-index: 2;
     transition: .6s linear;
-
-
-
 }
 
-
 .button-nav.active {
-
     color: black;
     z-index: 1;
     animation: menu .6s linear both;
@@ -59,8 +51,6 @@ nav.active {
 }
 
 @keyframes menu {
-
-
     100% {
         left: 67vw;
         transform: rotateY(180deg);
@@ -68,7 +58,6 @@ nav.active {
 }
 
 nav a {
-
     font-size: 1.8rem;
     display: inline-block;
     font-family: 'Roboto Condensed', sans-serif;
@@ -80,14 +69,9 @@ nav a {
     line-height: 30px;
     text-align: center;
     flex-basis: 30px;
-
-
-
-
 }
 
 nav a:last-child {
-
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -95,7 +79,6 @@ nav a:last-child {
 }
 
 nav button {
-
     font-family: 'Roboto Condensed', sans-serif;
     border: 2px solid #555;
     font-size: 1.7rem;
@@ -105,23 +88,19 @@ nav button {
     letter-spacing: 1px;
     margin: 0 auto;
     transition: .2s;
-
 }
 
 @media (min-width:480px) and (orientation:landscape) {
     nav {
-
         transform: translateY(-100%);
         height: 100%;
         width: 100vw;
         padding-top: 0;
         flex-grow: 1;
-
     }
 
     nav.active {
         transform: translateY(0);
-
     }
 
     nav a {
@@ -133,13 +112,8 @@ nav button {
         text-align: center;
         flex-basis: 30px;
         flex-grow: 1;
-
-
-
-
     }
 
-    /* xiaomi kuziwa */
     .button-nav {
         transform: rotate(90deg);
         transform-origin: center center;
@@ -147,22 +121,14 @@ nav button {
         font-size: 30px;
     }
 
-
-
     @keyframes menu {
-
-
         100% {
-
             transform: rotate(270deg);
         }
     }
 
     @keyframes return {
-
-
         100% {
-
             transform: rotate(90deg);
         }
     }
@@ -170,20 +136,15 @@ nav button {
     nav button {
         font-size: 20px;
         padding: 10px 30px;
-
     }
 
     nav a:last-child {
-
         justify-content: flex-start;
         justify-content: flex-end;
     }
 }
 
-
 @media (min-width:560px) {
-
-
     nav a {
         font-size: 15px;
         margin: 1% auto;
@@ -192,7 +153,6 @@ nav button {
 
     nav button {
         font-size: 1.5rem;
-
     }
 
     .button-nav {
@@ -201,38 +161,29 @@ nav button {
 }
 
 @media (min-width:640px) and (orientation:landscape) {
-
-
     nav a {
         font-size: 20px;
         margin: 4px auto;
-
         vertical-align: middle;
         align-content: center;
-
     }
 
     nav button {
         font-size: 20px;
-
     }
-
 
     .button-nav {
         font-size: 35px;
-
     }
 
     nav a:last-child {
         justify-content: flex-end;
     }
-
 }
 
 @media (min-width:768px) {
     nav {
         width: 55vw;
-
     }
 
     nav a {
@@ -247,14 +198,9 @@ nav button {
 
     .button-nav {
         font-size: 40px;
-
     }
 
-
-
     @keyframes menu {
-
-
         100% {
             left: 46vw;
             transform: rotateY(180deg);
@@ -264,12 +210,9 @@ nav button {
 
 @media(orientation:landscape) and (min-width: 800px) {
     nav {
-
         transform: translateY(-100%);
         height: 100%;
         width: 100vw;
-
-
     }
 
     nav.active {
@@ -277,49 +220,30 @@ nav button {
     }
 
     nav a {
-
         font-size: 2.0rem;
         display: inline-block;
         flex-grow: 1;
         padding: 10px;
         margin: 1.5% auto;
-
         line-height: 20px;
         text-align: center;
         flex-basis: 20px;
-
-
-
-
     }
-
-
-
 
     .button-nav {
         transform: rotate(90deg);
         transform-origin: center center;
         transform-origin: 50% 50%;
-
-
     }
 
-
-
     @keyframes menu {
-
-
         100% {
-
             transform: rotate(270deg);
         }
     }
 
     @keyframes return {
-
-
         100% {
-
             transform: rotate(90deg);
         }
     }
@@ -327,11 +251,9 @@ nav button {
     nav button {
         font-size: 2.0rem;
         padding: 10px 30px;
-
     }
 
     nav a:last-child {
-
         justify-content: flex-start;
     }
 }
@@ -340,7 +262,6 @@ nav button {
     nav a {
         font-size: 1.8rem;
         margin: 1% auto;
-
     }
 
     nav button {
@@ -349,7 +270,6 @@ nav button {
 
     nav {
         height: 60%;
-
     }
 
     nav.active {
@@ -370,8 +290,6 @@ nav button {
         box-shadow: 11px 19px 41px -8px rgba(0, 0, 0, 0.75);
     }
 
-
-
     nav a {
         margin: 0 30px;
         padding: 0;
@@ -380,9 +298,6 @@ nav button {
         flex-basis: 12%;
         position: relative;
         flex-grow: 0;
-
-
-
     }
 
     nav a:before {
@@ -400,16 +315,12 @@ nav button {
         top: 0;
         width: 100px;
         height: 100px;
-
-
     }
 
     nav a:last-child {
-
         flex-grow: 1;
         flex-direction: row;
         align-items: center;
-
     }
 
     nav button {
@@ -423,7 +334,6 @@ nav button {
 }
 
 @media (orientation: landscape) and (min-width: 1440px) {
-
     nav a {
         margin: 0 30px;
         padding: 0;
@@ -431,11 +341,7 @@ nav button {
         align-items: center;
         flex-basis: 12%;
         position: relative;
-
-
-
     }
-
 
     nav button {
         font-size: 30px;
@@ -443,20 +349,16 @@ nav button {
     }
 }
 
-
-
+/* index.html styles */
 
 main {
     max-width: 1280px;
     margin: 5vh auto;
-
-
 }
 
 main h1 {
     font-size: 25px;
     text-align: center;
-
 }
 
 main p.description {
@@ -465,24 +367,16 @@ main p.description {
     text-align: justify;
 }
 
-
-
 main .info {
     text-align: center;
     font-size: 0;
     position: relative;
-
-
-
 }
 
 .features .info .right,
 .features .info .left {
     font-size: 30px;
     position: absolute;
-
-
-
 }
 
 .features .info .right {
@@ -497,19 +391,13 @@ main .info {
     transform: translateY(-50%);
 }
 
-
-
-
 .features .info .imge {
     height: 200px;
     transition: .3s;
-
     margin: 20px;
-
     background-size: cover;
     background-position: center;
     transform: scale(.8);
-
 }
 
 .features .info p {
@@ -517,10 +405,7 @@ main .info {
     padding: 5%;
     font-size: 15px;
     transition: 1s;
-
 }
-
-
 
 .features .info h2 {
     margin-top: 50px;
@@ -528,8 +413,6 @@ main .info {
     font-size: 2rem;
     text-align: center;
 }
-
-
 
 html {
     font-size: 10px;
@@ -566,15 +449,12 @@ header h1 {
 .media span {
     font-weight: bold;
     margin-left: 10px;
-
 }
 
 .icons {
     float: right;
     width: 30%;
-
     font-size: 20px;
-
 }
 
 .icons i {
@@ -599,17 +479,10 @@ header h1 {
     text-align: left;
     font-size: 15px;
     margin: 30px 0;
-
-
-
 }
-
-
-
 
 footer {
     background-color: black;
-    width: 100vw;
 }
 
 footer p {
@@ -649,12 +522,9 @@ footer p {
         width: 100%;
         max-height: 220px;
     }
-
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
-
-
     header h1 {
         font-size: 10.2rem;
     }
@@ -675,7 +545,6 @@ footer p {
     .features .info .imge {
         margin: 0 auto;
         height: 500px;
-
     }
 
     .features .info h2 {
@@ -776,9 +645,7 @@ footer p {
     }
 }
 
-
-
-/* Repai.html */
+/* Repair.html styles*/
 
 main .repair {
     padding: 5%;
@@ -790,8 +657,6 @@ main .repair {
     text-align: left;
     min-height: 250px;
 }
-
-
 
 .price .mech .list {
     overflow-y: hidden;
@@ -820,11 +685,9 @@ main .repair {
 
 .mech i {
     color: rgb(153, 22, 22);
-
 }
 
 .price h2 {
-
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -834,7 +697,6 @@ main .repair {
     right: 0;
     top: 0;
 }
-
 
 .price .mech .list td {
     font-size: 15px;
@@ -846,7 +708,6 @@ main .repair {
     background-color: rgb(235, 221, 221);
 }
 
-
 .price .mech .list table {
     margin: 20px auto;
     border-collapse: collapse;
@@ -854,46 +715,35 @@ main .repair {
 
 @media (min-width:480px) and (orientation:landscape) {
     main .repair {
-
         font-size: 18px;
     }
 
     .price .mech .list td {
         font-size: 18px;
-
     }
-
 }
 
 @media (min-width:600px) and (orientation:landscape) {
-
-
     .price .mech .list td {
         font-size: 22px;
-
     }
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
     main .repair {
-
         font-size: 25px;
     }
 
     .price .mech .list td {
         font-size: 35px;
-
     }
 
     .price h2 {
-
         font-size: 27px;
-
     }
 
     .price .mech {
         font-size: 25px;
-
     }
 
     .price .mech .list {
@@ -903,24 +753,19 @@ main .repair {
 
 @media (orientation: landscape) and (min-width: 1280px) {
     main .repair {
-
         font-size: 30px;
     }
 
     .price .mech .list td {
         font-size: 35px;
-
     }
 
     .price h2 {
-
         font-size: 29px;
-
     }
 
     .price .mech {
         font-size: 28px;
-
     }
 
     .price .mech .list {
@@ -928,8 +773,7 @@ main .repair {
     }
 }
 
-
-/* parts.html */
+/* parts.html styles*/
 
 main .advert {
     padding: 5%;
@@ -991,40 +835,32 @@ main .advert {
     animation: thumbs 3s 10.5s both;
 }
 
-
-
 @keyframes square {
     50% {
         top: 25%;
-
     }
 
     80% {
         top: 50%;
-
     }
 
     100% {
         opacity: 0;
     }
-
 }
 
 @keyframes cart {
     50% {
         top: 50%;
-
     }
 
     80% {
         top: 40%;
-
     }
 
     100% {
         opacity: 0;
     }
-
 }
 
 @keyframes hands {
@@ -1042,28 +878,20 @@ main .advert {
 
     100% {
         opacity: 0;
-
     }
-
 }
 
 @keyframes shipping {
-
-
     100% {
-
         left: 100%
     }
-
 }
 
 @keyframes thumbs {
-
     100% {
         opacity: 1;
         left: 50%
     }
-
 }
 
 @media (min-width:480px) and (orientation:landscape) {
@@ -1073,14 +901,11 @@ main .advert {
     .animation .fa-handshake,
     .animation .fa-shipping-fast,
     .animation .fa-thumbs-up {
-
         font-size: 65px;
     }
 
     .animation .fa-cart-arrow-down {
-
         top: 50%;
-
     }
 
     main .advert {
@@ -1088,41 +913,32 @@ main .advert {
         font-size: 15px;
     }
 
-
-
     @keyframes square {
         50% {
             top: 25%;
-
         }
 
         80% {
             top: 50%;
-
         }
 
         100% {
             opacity: 0;
         }
-
     }
 
     @keyframes cart {
         50% {
-
             top: 50%;
-
         }
 
         80% {
             top: 40%;
-
         }
 
         100% {
             opacity: 0;
         }
-
     }
 }
 
@@ -1133,18 +949,12 @@ main .advert {
     .animation .fa-handshake,
     .animation .fa-shipping-fast,
     .animation .fa-thumbs-up {
-
         font-size: 100px;
     }
 
     .animation {
         min-height: 200px;
-
-
     }
-
-
-
 }
 
 @media (min-width:640px) and (orientation:landscape) {
@@ -1161,7 +971,6 @@ main .advert {
     .animation .fa-handshake,
     .animation .fa-shipping-fast,
     .animation .fa-thumbs-up {
-
         font-size: 130px;
     }
 
@@ -1172,59 +981,43 @@ main .advert {
 
     .animation {
         min-height: 300px;
-
-
-
     }
 
     .animation .fa-cart-arrow-down {
-
         top: 45%;
-
     }
 
     @keyframes square {
         50% {
             top: 25%;
-
         }
 
         80% {
             top: 40%;
-
         }
 
         100% {
             opacity: 0;
         }
-
     }
 
     @keyframes cart {
         50% {
-
             top: 42.5%;
-
         }
 
         80% {
             top: 40%;
-
         }
 
         100% {
             opacity: 0;
         }
-
     }
 }
 
+/*visit.html styles */
 
-
-
-
-
-/*visit.html  */
 .visits {
     text-align: center;
 }
@@ -1248,18 +1041,12 @@ main .advert {
     background-color: rgb(207, 201, 201);
     position: relative;
     outline: none;
-
 }
 
 .visits input:focus {
     font-size: 30px;
     background-color: rgb(219, 216, 216);
 }
-
-
-
-
-
 
 .visits input:last-of-type {
     font-size: 20px;
@@ -1285,31 +1072,25 @@ main .advert {
         margin: 15px 0;
         width: 50%;
         font-size: 30px;
-
-
     }
 
     .visits form {
         text-align: center;
         padding: 5%;
+        margin: 0 auto;
     }
 
     .label-input {
         font-size: 30px;
-
     }
 
     .visits input:focus {
-
         background-color: rgb(219, 216, 216);
     }
-
-
 }
 
+/* towing.html styles*/
 
-
-/* towing.html */
 .towing {
     text-align: center;
 }
@@ -1337,13 +1118,11 @@ main .advert {
 @media (min-width:480px) and (orientation:landscape) {
     .towing img {
         width: 20%;
-
     }
 }
 
 @media (min-width:768px) {
     .towing h1 {
-
         font-size: 35px;
     }
 
@@ -1352,9 +1131,7 @@ main .advert {
     }
 
     .towing .desc p {
-
         font-size: 20px;
-
     }
 
     .towing img {
@@ -1363,11 +1140,8 @@ main .advert {
     }
 }
 
-
-
 @media(orientation:landscape) and (min-width: 1280px) {
     .towing h1 {
-
         font-size: 40px;
     }
 
@@ -1376,9 +1150,7 @@ main .advert {
     }
 
     .towing .desc p {
-
         font-size: 25px;
-
     }
 
     .towing img {
@@ -1389,7 +1161,6 @@ main .advert {
 
 @media(orientation:landscape) and (min-width: 1440px) {
     .towing h1 {
-
         font-size: 50px;
     }
 
@@ -1398,9 +1169,7 @@ main .advert {
     }
 
     .towing .desc p {
-
         font-size: 35px;
-
     }
 
     .towing img {

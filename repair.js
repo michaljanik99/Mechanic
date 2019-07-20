@@ -1,3 +1,4 @@
+// menu button script
 const btn = document.querySelector('.button-nav i');
 const menu = document.querySelector('nav');
 btn.addEventListener('click', () => {
@@ -6,6 +7,7 @@ btn.addEventListener('click', () => {
 
 })
 
+// menu hiden script
 const windowWidth = window.outerWidth;
 if (windowWidth >= 1280) {
     const navBar = document.querySelector('nav');
@@ -21,7 +23,7 @@ if (windowWidth >= 1280) {
         lastScrollPosition = newScrollPosition;
     }
 }
-
+// lists script
 const btnm = document.querySelectorAll('.price .mech p');
 btnm.forEach(p => p.addEventListener('click', function () {
     this.nextElementSibling.classList.toggle('active');
